@@ -248,7 +248,7 @@ class FactTrainer(BaseTrainer):
             cids, eids = expert_assign(T_probs)
             _max_ids = torch.where(_b_comp_id)[0][cids]
             ac_loss_c += F.cross_entropy(_logit[eids], _max_ids)
-            acc = T_probs[cids, eids].sum() / n_experts
+            acc = T_probs[cids.detach().cpu(), eids.detach().cpu()].sum() / n_experts
             accs += acc
 
         ac_loss_c /= B

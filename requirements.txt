@@ -1,0 +1,16 @@
+numpy
+scipy 
+scikit-image
+Pillow == 9.4.0
+opencv-python 
+sconf
+tqdm 
+jsonlib-python3 
+fonttools
+matplotlib
+torch
+torchvision
+torchaudio
+
+# conda create -n "mxfont" python=3.11.5 ipython
+# pip install -r requirements.txt
