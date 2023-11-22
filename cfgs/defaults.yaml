@@ -46,7 +46,7 @@ g_args:
     pad_type: zero
     skip_scale_var: False
   experts:
-    n_experts: 6
+    n_experts: 8
     norm: in
     activ: relu
     pad_type: zero
